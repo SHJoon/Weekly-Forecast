@@ -24,7 +24,7 @@ const Search = ({ setIsError, city, setCity, setForecast }) => {
             return info.dt_txt.includes("18:00:00");
           });
           console.log(dailyData);
-          setForecast(res.data);
+          setForecast(dailyData);
           setIsError(false);
         })
         .catch((err) => {
