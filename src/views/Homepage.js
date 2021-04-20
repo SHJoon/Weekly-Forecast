@@ -8,6 +8,7 @@ const Homepage = () => {
   const [isError, setIsError] = useState(false);
   const [city, setCity] = useState("");
   const [forecast, setForecast] = useState(null);
+  const [renderedUnit, setRenderedUnit] = useState("F");
 
   return (
     <div>
@@ -17,9 +18,10 @@ const Homepage = () => {
         city={city}
         setCity={setCity}
         setForecast={setForecast}
+        setRenderedUnit={setRenderedUnit}
       />
       {isError && <InputError />}
-      <Forecast forecast={forecast} />
+      <Forecast forecast={forecast} renderedUnit={renderedUnit} />
     </div>
   );
 };

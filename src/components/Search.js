@@ -3,7 +3,13 @@ import axios from "axios";
 
 import styles from "../styles/Search.module.css";
 
-const Search = ({ setIsError, city, setCity, setForecast }) => {
+const Search = ({
+  setIsError,
+  city,
+  setCity,
+  setForecast,
+  setRenderedUnit,
+}) => {
   const [tempUnit, setTempUnit] = useState("imperial");
 
   const handleSubmit = (e) => {
@@ -20,11 +26,8 @@ const Search = ({ setIsError, city, setCity, setForecast }) => {
             throw new Error();
           }
           console.log(res.data);
-          const dailyData = res.data.list.filter((info) => {
-            return info.dt_txt.includes("18:00:00");
-          });
-          console.log(dailyData);
-          setForecast(dailyData);
+          tempUnit === "imperial" ? setRenderedUnit("F") : setRenderedUnit("C");
+          setForecast(res.data);
           setIsError(false);
         })
         .catch((err) => {
