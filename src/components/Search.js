@@ -70,7 +70,7 @@ const Search = ({
         </label>
 
         <input
-          className={styles.button}
+          className={`${styles.button} btn btn-primary`}
           type="submit"
           value="Retrieve forecast information"
         />
