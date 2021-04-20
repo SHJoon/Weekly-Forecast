@@ -1,7 +1,5 @@
 import React from "react";
 
-import styles from "../styles/Card.module.css";
-
 var moment = require("moment");
 
 const Card = ({ dailyReading, renderedUnit }) => {
@@ -13,20 +11,21 @@ const Card = ({ dailyReading, renderedUnit }) => {
 
   return (
     <div className="col-lg-2 col-md-5 col-sm-12 col-xs-12">
-      <div className={styles.card}>
+      <div>
         <div>
           <h4>{moment(today).format("dddd")}</h4>
           <p>{moment(today).format("MMMM Do, h:mm a")}</p>
         </div>
         <div>
-          <i className={`${imgURL} ${styles.images}`}></i>
+          <i className={imgURL}></i>
           <h2>
             {Math.round(dailyReading.main.temp)} °{renderedUnit}
           </h2>
-          <div className="card-body">
-            <p className="card-text">{dailyReading.weather[0].description}</p>
+          <div>
+            <p>{dailyReading.weather[0].description}</p>
           </div>
         </div>
+        <hr className="mx-6"></hr>
       </div>
     </div>
   );

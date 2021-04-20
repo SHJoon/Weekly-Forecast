@@ -25,7 +25,6 @@ const Search = ({
           if (res.status !== 200) {
             throw new Error();
           }
-          console.log(res.data);
           tempUnit === "imperial" ? setRenderedUnit("F") : setRenderedUnit("C");
           setForecast(res.data);
           setIsError(false);

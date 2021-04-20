@@ -2,10 +2,12 @@ import React from "react";
 
 import Card from "./Card";
 
+import styles from "../styles/Forecast.module.css";
+
 const Forecast = ({ forecast, renderedUnit }) => {
   return (
     <div className="container">
-      <h1 className="display-2 jumbotron">5-Day Forecast</h1>
+      <h1 className={`display-2 jumbotron ${styles.title}`}>5-Day Forecast</h1>
       {forecast?.cod === "200" ? (
         <span>
           <h5 className="display-4 mb-4">
@@ -17,7 +19,6 @@ const Forecast = ({ forecast, renderedUnit }) => {
                 return info.dt_txt.includes("18:00:00");
               })
               .map((dailyReading, idx) => {
-                console.log(dailyReading);
                 return (
                   <Card
                     key={idx}
