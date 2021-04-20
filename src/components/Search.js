@@ -43,12 +43,13 @@ const Search = ({
     <div>
       <form onSubmit={(e) => handleSubmit(e)}>
         <input
+          className="px-2"
           type="text"
           placeholder="Enter city name."
           value={city}
           onChange={(e) => setCity(e.target.value)}
         />
-        <label>
+        <label className="px-2">
           <input
             type="radio"
             name="unit"
@@ -70,7 +71,7 @@ const Search = ({
         </label>
 
         <input
-          className={`${styles.button} btn btn-primary`}
+          className={`${styles.button} btn btn-primary mb-4`}
           type="submit"
           value="Retrieve forecast information"
         />

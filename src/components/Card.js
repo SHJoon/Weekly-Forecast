@@ -12,10 +12,10 @@ const Card = ({ dailyReading, renderedUnit }) => {
   const imgURL = `owf owf-${dailyReading.weather[0].id} owf-5x`;
 
   return (
-    <div className="col-xl-2 col-lg-2 col-md-5 col-sm-12 col-xs-12">
+    <div className="col-lg-2 col-md-5 col-sm-12 col-xs-12">
       <div className={styles.card}>
         <div>
-          <h3 className="card-title">{moment(today).format("dddd")}</h3>
+          <h4>{moment(today).format("dddd")}</h4>
           <p>{moment(today).format("MMMM Do, h:mm a")}</p>
         </div>
         <div>

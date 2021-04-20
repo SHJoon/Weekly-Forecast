@@ -8,7 +8,7 @@ const Forecast = ({ forecast, renderedUnit }) => {
       <h1 className="display-2 jumbotron">5-Day Forecast</h1>
       {forecast?.cod === "200" ? (
         <span>
-          <h5 className="display-4">
+          <h5 className="display-4 mb-4">
             {forecast.city.name}, {forecast.city.country}
           </h5>
           <div className="row justify-content-center">
