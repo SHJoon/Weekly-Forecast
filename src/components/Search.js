@@ -19,7 +19,7 @@ const Search = ({
       let uriEncodedCity = encodeURIComponent(city);
       axios
         .get(
-          `http://api.openweathermap.org/data/2.5/forecast?q=${uriEncodedCity}&appid=${process.env.REACT_APP_API_KEY}&units=${tempUnit}`
+          `https://api.openweathermap.org/data/2.5/forecast?q=${uriEncodedCity}&appid=${process.env.REACT_APP_API_KEY}&units=${tempUnit}`
         )
         .then((res) => {
           if (res.status !== 200) {
