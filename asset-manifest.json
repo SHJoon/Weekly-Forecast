@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Weekly-Forecast/static/css/main.e12cb0b5.chunk.css",
+    "main.js": "/Weekly-Forecast/static/js/main.909d3ad0.chunk.js",
+    "main.js.map": "/Weekly-Forecast/static/js/main.909d3ad0.chunk.js.map",
+    "runtime-main.js": "/Weekly-Forecast/static/js/runtime-main.f6745127.js",
+    "runtime-main.js.map": "/Weekly-Forecast/static/js/runtime-main.f6745127.js.map",
+    "static/js/2.8017c9f5.chunk.js": "/Weekly-Forecast/static/js/2.8017c9f5.chunk.js",
+    "static/js/2.8017c9f5.chunk.js.map": "/Weekly-Forecast/static/js/2.8017c9f5.chunk.js.map",
+    "static/js/3.9e528015.chunk.js": "/Weekly-Forecast/static/js/3.9e528015.chunk.js",
+    "static/js/3.9e528015.chunk.js.map": "/Weekly-Forecast/static/js/3.9e528015.chunk.js.map",
+    "index.html": "/Weekly-Forecast/index.html",
+    "static/css/main.e12cb0b5.chunk.css.map": "/Weekly-Forecast/static/css/main.e12cb0b5.chunk.css.map",
+    "static/js/2.8017c9f5.chunk.js.LICENSE.txt": "/Weekly-Forecast/static/js/2.8017c9f5.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f6745127.js",
+    "static/js/2.8017c9f5.chunk.js",
+    "static/css/main.e12cb0b5.chunk.css",
+    "static/js/main.909d3ad0.chunk.js"
+  ]
+}
